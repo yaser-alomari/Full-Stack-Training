@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|t:\\dot net 8 training\\projects\\webapplication1\\webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|t:\\dot net 8 training\\projects\\webapplication1\\webapplication1\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\user\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|t:\\dot net 8 training\\projects\\webapplication1\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|t:\\dot net 8 training\\projects\\webapplication1\\webapplication1\\models\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|t:\\dot net 8 training\\projects\\webapplication1\\webapplication1\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|t:\\dot net 8 training\\projects\\webapplication1\\webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|t:\\dot net 8 training\\projects\\webapplication1\\webapplication1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|t:\\dot net 8 training\\projects\\webapplication1\\webapplication1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|t:\\dot net 8 training\\projects\\webapplication1\\webapplication1\\models\\operations\\userops.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99F9B6D7-8A1B-4F66-AEBA-0D4941840D79}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\models\\operations\\userops.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-14T17:15:13.238Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-14T17:15:07.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\_ViewStart.cshtml",
+              "ToolTip": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-14T17:14:42.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\_ViewImports.cshtml",
+              "ToolTip": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-14T17:06:28.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Views\\User\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebApplication1\\Views\\User\\Index.cshtml",
+              "ToolTip": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Views\\User\\Index.cshtml",
+              "RelativeToolTip": "WebApplication1\\Views\\User\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-02-14T17:06:12.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UserOps.cs",
+              "DocumentMoniker": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Models\\operations\\UserOps.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\operations\\UserOps.cs",
+              "ToolTip": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Models\\operations\\UserOps.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\operations\\UserOps.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-14T16:57:23.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Models\\classes\\User.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Models\\classes\\User.cs",
+              "ToolTip": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Models\\classes\\User.cs",
+              "RelativeToolTip": "WebApplication1\\Models\\classes\\User.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAkAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-14T16:56:10.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controllers\\UserController.cs",
+              "ToolTip": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Controllers\\UserController.cs",
+              "RelativeToolTip": "WebApplication1\\Controllers\\UserController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAABEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-14T16:55:35.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
+              "ToolTip": "T:\\Dot Net 8 Training\\projects\\WebApplication1\\WebApplication1\\Program.cs",
+              "RelativeToolTip": "WebApplication1\\Program.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAswBgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-14T16:54:48.303Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
