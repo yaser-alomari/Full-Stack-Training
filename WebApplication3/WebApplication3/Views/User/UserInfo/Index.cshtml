@@ -1,0 +1,22 @@
+﻿@model List<WebApplication3.Models.classes.User>
+<h2>User List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+<tbody>
+        @foreach (var u in Model)
+        {
+          <tr>
+              <td>@u.Id</td>
+              <td>@u.Name</td>
+              <td>@u.Email</td>
+          </tr>  
+        }
+    </tbody>
+</table>
