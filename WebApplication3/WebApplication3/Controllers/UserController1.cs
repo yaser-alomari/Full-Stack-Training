@@ -9,14 +9,15 @@ namespace MyWebApi.Controllers
     {
         private static List<User> _users = new List<User> 
         {
-            new User {Id = "1",Name = "Ahmad",Email="Ahmad@gmail.com" },
-            new User {Id = "2",Name = "Yasser",Email="Yasser@gmail.com" },
+            new User {Id = "1",Name = "Ahmad",Email="Ahmad@gmail.com",Password="123456" },
+            new User {Id = "2",Name = "Yasser",Email="Yasser@gmail.com",Password="654321" },
         };
         [HttpGet]
         public IActionResult Index() 
         {
-            return RedirectToAction(nameof(UserInfo));
+            return RedirectToAction(nameof(Login));
         }
+       
 
         // GET: Display Form
         [HttpGet]
@@ -34,19 +35,78 @@ namespace MyWebApi.Controllers
         [HttpPost]
         public IActionResult Create(User user)
         {
-            if (ModelState.IsValid)
+
+             int nextid = _users
+            .Select(u => int.TryParse(u.Id, out var n) ? n : 0)
+            .DefaultIfEmpty(0)
+            .Max() + 1;
+            user.Id = (nextid).ToString();
+            if (!ModelState.IsValid)
             {
-                // مؤقتًا نخزن رسالة في TempData
-                TempData["Message"] = "User created successfully!";
-                return RedirectToAction("Success");
+
+                return View("UserCreate/Index");
+            }
+            _users.Add(user);
+
+                TempData["SuccessMessage"] = "User added successfully!";
+                return RedirectToAction(nameof(UserInfo));
+            
+        }
+        [HttpPost]
+        public IActionResult Delete(string id)
+        {
+            var user = _users.FirstOrDefault(u => u.Id == id);
+
+            if (user != null)
+            {
+                _users.Remove(user);
+                TempData["SuccessMessage"] = "User deleted successfully!";
             }
 
-            user.Id = (_users.Count +1).ToString();
-            _users.Add(user);
-           
             return RedirectToAction(nameof(UserInfo));
         }
 
-       
+        [HttpPost]
+        public IActionResult Edit(User updatedUser)
+        {
+            var user = _users.FirstOrDefault(u => u.Id == updatedUser.Id);
+
+            if (user == null)
+                return NotFound();
+
+            user.Name = updatedUser.Name;
+            user.Email = updatedUser.Email;
+
+            TempData["SuccessMessage"] = "User updated successfully!";
+
+            return RedirectToAction(nameof(UserInfo));
+        }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View("Login/Index");
+        }
+
+        [HttpPost]
+        public IActionResult Login(string Email, string Password)
+        {
+            // تحقق من وجود مستخدم بنفس البريد وكلمة السر
+            var user = _users.FirstOrDefault(u => u.Email == Email && u.Password == Password);
+
+            if (user != null)
+            {
+                // تسجيل الدخول ناجح
+                TempData["SuccessMessage"] = $"Welcome {user.Name}!";
+                return RedirectToAction(nameof(UserInfo));
+            }
+            else
+            {
+                // خطأ
+                TempData["ErrorMessage"] = "Email or Password is incorrect!";
+                return View("Login/Index");
+            }
+        }
+
     }
 }

@@ -1,0 +1,32 @@
+﻿@model WebApplication3.Models.classes.User
+
+<h2 class="text-center mb-4">Login</h2>
+
+    <div class="d-flex justify-content-center align-items-center" style="height: 80vh;">
+        <div style="border: 1px solid #ccc; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+
+
+<form asp-controller="User" asp-action="Login" method="post">
+
+    <style>
+        input[type="email"], input[type="password"] {
+            width: 250px; 
+            height: 35px; 
+            font-size: 14px;
+        }
+    </style>
+    <div class="mb-3">
+        <label>Email:</label>
+        <input type="email" name="Email" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label>Password:</label>
+        <input type="password" name="Password" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger mt-2">@TempData["ErrorMessage"]</div>
+}

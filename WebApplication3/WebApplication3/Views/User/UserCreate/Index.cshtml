@@ -1,20 +1,62 @@
 ﻿@model WebApplication3.Models.classes.User
 
-<h1>Create User</h1>
+<h1 class="text-center mb-4">Create User</h1>
 
-<form asp-controller="User"asp-action="Create" method="post">
-    <div>
-        <label>Name</label>
-        <input asp-for="Name" />
-        
+<div class="d-flex justify-content-center">
+    <div style="border: 1px solid #ccc; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+
+        <form asp-controller="User" asp-action="Create" method="post">
+            <style>
+                input[type="text"], input[type="email"] {
+                    width: 250px; /* نفس عرض كل البوكسات */
+                    height: 35px; /* نفس ارتفاع البوكسات */
+                    font-size: 14px;
+                    margin-bottom: 15px;
+                }
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+
+                button {
+                    width: 100%;
+                    height: 38px;
+                }
+            </style>
+
+            <div>
+                <label asp-for="Name">Name</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div>
+                <label asp-for="Email">Email</label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div>
+                <label asp-for="Password">Password</label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Create</button>
+        </form>
+
     </div>
+</div>
 
-    <div>
-        <label>Email</label>
-        <input asp-for="Email" />
-        
-    </div>
 
-    <button type="submit">Create</button>
-</form>
+
+
+
+
+
+
+
+
 

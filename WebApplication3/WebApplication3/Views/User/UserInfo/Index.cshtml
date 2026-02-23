@@ -1,5 +1,13 @@
 ﻿@model List<WebApplication3.Models.classes.User>
-<h2>User List</h2>
+
+<h2>Users List</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["SuccessMessage"]
+    </div>
+}
 
 <table class="table">
     <thead>
@@ -7,16 +15,110 @@
             <th>ID</th>
             <th>Name</th>
             <th>Email</th>
+            <th>Actions</th>
         </tr>
     </thead>
-<tbody>
+    <tbody>
         @foreach (var u in Model)
         {
-          <tr>
-              <td>@u.Id</td>
-              <td>@u.Name</td>
-              <td>@u.Email</td>
-          </tr>  
+            <tr>
+                <form asp-controller="User"
+                      asp-action="Edit"
+                      method="post">
+
+                    <input type="hidden" name="Id" value="@u.Id" />
+
+                <td>@u.Id</td>
+
+                <!-- NAME -->
+                <td>
+                    <span class="view-mode">@u.Name</span>
+                    <input type="text"
+                           name="Name"
+                           value="@u.Name"
+                           class="form-control edit-mode d-none" />
+                </td>
+
+                <!-- EMAIL -->
+                <td>
+                    <span class="view-mode">@u.Email</span>
+                    <input type="text"
+                           name="Email"
+                           value="@u.Email"
+                           class="form-control edit-mode d-none" />
+                </td>
+
+                <!-- ACTIONS -->
+                <td>
+
+                    <!-- View Mode -->
+                    <span class="view-mode">
+
+                        <!-- Edit Button -->
+                        <button type="button"
+                                class="btn btn-primary btn-sm edit-btn">
+                            <i class="bi bi-pencil"></i>
+                        </button>
+
+                        <!-- Delete -->
+                        <button type="submit"
+                                formaction="/User/Delete"
+                                formmethod="post"
+                                class="btn btn-danger btn-sm"
+                                onclick="return confirm('Are you sure?')">
+                            <i class="bi bi-trash"></i>
+                        </button>
+
+                    </span>
+
+                    <!-- Edit Mode -->
+                    <span class="edit-mode d-none">
+
+                        <!-- Save -->
+                        <button type="submit"
+                                class="btn btn-success btn-sm">
+                            <i class="bi bi-check"></i>
+                        </button>
+
+                        <!-- Cancel -->
+                        <button type="button"
+                                class="btn btn-secondary btn-sm cancel-btn">
+                            <i class="bi bi-x"></i>
+                        </button>
+
+                    </span>
+
+                </td>
+
+                </form>
+            </tr>
         }
     </tbody>
 </table>
+
+<!-- JavaScript -->
+<script>
+    document.querySelectorAll(".edit-btn").forEach(btn => {
+        btn.addEventListener("click", function () {
+            const row = this.closest("tr");
+
+            row.querySelectorAll(".view-mode").forEach(el => el.classList.add("d-none"));
+            row.querySelectorAll(".edit-mode").forEach(el => el.classList.remove("d-none"));
+        });
+    });
+
+    document.querySelectorAll(".cancel-btn").forEach(btn => {
+        btn.addEventListener("click", function () {
+            const row = this.closest("tr");
+
+            row.querySelectorAll(".view-mode").forEach(el => el.classList.remove("d-none"));
+            row.querySelectorAll(".edit-mode").forEach(el => el.classList.add("d-none"));
+
+            // يرجع القيم الأصلية
+            row.querySelectorAll("input[type=text]").forEach(input => {
+                input.value = input.defaultValue;
+            });
+        });
+    });
+</script>
+
