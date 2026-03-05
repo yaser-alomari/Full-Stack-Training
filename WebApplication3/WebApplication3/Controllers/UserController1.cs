@@ -171,6 +171,25 @@ namespace MyWebApi.Controllers
                 return Convert.ToBase64String(bytes);
             }
         }
+
+        [HttpGet]
+        public IActionResult Search(string query)
+        {
+            if (!IsLoggedIn())
+                return RedirectToAction(nameof(Login));
+
+            // إذا البحث فارغ يرجع كل المستخدمين
+            if (string.IsNullOrEmpty(query))
+            {
+                List<User> users = _userContext.GetAllUsers();
+                return View("UserInfo/Index", users);
+            }
+
+            // استدعاء البحث من DAL
+            List<User> usersList = _userContext.SearchUsers(query);
+
+            return View("UserInfo/Index", usersList);
+        }
     }
 }
 

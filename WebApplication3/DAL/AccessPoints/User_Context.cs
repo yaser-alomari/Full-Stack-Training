@@ -106,5 +106,37 @@ namespace DAL.AccessPoints
                 }
             }
         }
+
+        public List<User> SearchUsers(string searchText)
+        {
+            var users = new List<User>();
+
+            using (var conn = new SqlConnection(_connectionString))
+            {
+                conn.Open();
+
+                using (var cmd = new SqlCommand("spUsers_Search", conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@SearchText", searchText);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            users.Add(new User
+                            {
+                                Id = reader["UserId"].ToString(),
+                                Name = reader["Name"].ToString(),
+                                Email = reader["Email"].ToString()
+                            });
+                        }
+                    }
+                }
+            }
+
+            return users;
+        }
     }
 }
