@@ -103,7 +103,7 @@ namespace DAL.AccessPoints
             using var conn = new SqlConnection(_connectionString);
             conn.Open();
 
-            using var cmd = new SqlCommand("spLogin", conn);
+            using var cmd = new SqlCommand("spUsers_Login", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@Email", email);
             cmd.Parameters.AddWithValue("@PasswordHash", passwordHash);
@@ -111,12 +111,6 @@ namespace DAL.AccessPoints
             using var reader = cmd.ExecuteReader();
             if (reader.Read())
             {
-                bool isSuccess = reader["IsSuccess"] != DBNull.Value &&
-                                 Convert.ToBoolean(reader["IsSuccess"]);
-
-                if (!isSuccess)
-                    return null;
-
                 return new User
                 {
                     Id = reader["UserId"]?.ToString() ?? "",

@@ -73,7 +73,7 @@ namespace MyWebApi.Controllers
             HttpContext.Session.SetString("UserName", user.Name ?? "");
             HttpContext.Session.SetString("UserId", user.Id ?? "");
             HttpContext.Session.SetString("RoleName", user.RoleName ?? "");
-
+           
             return Ok(new
             {
                 message = $"Welcome {user.Name}!",
